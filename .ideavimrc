@@ -1,0 +1,51 @@
+""" Map leader to space ---------------------
+let mapleader="\<Space>"
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-ent re
+set ReplaceWithRegister
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Idea specific settings ------------------
+set ideajoi
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+" map <leader>f <Plug>(easymotion-s)
+" map <leader>e <Plug>(easymotion-f)
+
+map <leader>d <Action>(Debug)
+map <leader>r <Action>(RenameElement)
+map <leader>c <Action>(Stop)
+map <leader>z <Action>(ToggleDistractionFreeMode)
+
+map <leader>s <Action>(SelectInProjectView)
+map <leader>a <Action>(Annotate)
+" map <leader>h <Action>(Vcs.ShowTabbedFileHistory)
+map <S-Space> <Action>(GotoNextError)
+
+jap <leader>b <Action>(ToggleLineBreakpoint)
+map <leader>o <Action>(FileStructurePopup)
+map <Leader>i <Action>(GotoImplementation)
+map <leader>p <Action>(GoToFile)
+map <leader>ff <Action>(NewFile)
+
+map <leader>qr <Action>(RestartIde)
+map <leader>pb <Action>(RecentFiles)
+map <leader>bx <Action>(CloseContent)
+map <leader>h <Action>(QuickJavaDoc)
+map <leader>' <Action>(ActivateTerminalToolWindow)
